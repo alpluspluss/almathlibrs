@@ -1,0 +1,15 @@
+[package]
+name = "libmrs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libm = "0.2.8"
+
+[features]
+default = ["std"]
+std = []
+simd = []          # SIMD optimizations
+
+[dev-dependencies]
+criterion = "0.5.1" # Criterion for benchmarking
